@@ -67,6 +67,11 @@ header {
   padding: 10px;
 }
 
+.header-a i {
+  font-size: 27px;
+  color: white;
+}
+
 /* NAVBAR */
 nav {
   width: 1080px;

@@ -95,7 +95,12 @@ function printIcons() {
           />
         </a>
       </li>
-      <li id="login" class="header-li">
+      <li id="login" class="header-li " >
+        <a class="header-a" href="#">
+          <i class="fa-solid fa-circle-user header-social-img"></i>
+        </a>
+      </li>
+      <li id="profile" class="header-li " >
         <a class="header-a" href="#">
           <img
             class="header-social-img"
