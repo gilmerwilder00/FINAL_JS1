@@ -1,4 +1,6 @@
-function printCartTotal(arrayOfProducts, id) {
+import { clearCart} from "./buyProducts.js";
+
+export function printCartTotal(arrayOfProducts, id) {
   let total = 0;
   arrayOfProducts.forEach(
     (each) => (total = total + each.price * each.quantity)

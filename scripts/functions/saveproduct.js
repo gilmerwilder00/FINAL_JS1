@@ -1,4 +1,6 @@
-function saveProd(id) {
+import { products } from "../products.js";
+
+export function saveProd(id) {
   const found = products.find((each) => each.id === id);
   const product = {
     id: id,
@@ -20,3 +22,5 @@ function saveProd(id) {
     localStorage.setItem("cart", stringifyProduct);
   }
 }
+
+window.saveProd = saveProd;

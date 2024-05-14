@@ -1,4 +1,4 @@
-function createProductCard(product) {
+export function createProductCard(product) {
   return `
     <a class="product-card" href="./details.html?id=${product.id}">
       <img class="product-img" src="${product.images[0]}" alt="${product.id}">

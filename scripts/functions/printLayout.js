@@ -1,4 +1,4 @@
-const options = [
+export const options = [
   {
     title: "Ofertas",
     href: "./index.html",
@@ -22,7 +22,7 @@ const options = [
   { title: "Garantía", href: "./index.html", refs: [] },
 ];
 
-function hideSearch() {
+export function hideSearch() {
   const pathname = location.pathname;
   if (!pathname.includes("index")) {
     document
@@ -31,7 +31,7 @@ function hideSearch() {
   }
 }
 
-function printNavBar(opts, id) {
+export function printNavBar(opts, id) {
   let template = "";
   for (const each of opts) {
     template =
@@ -46,7 +46,7 @@ function printNavBar(opts, id) {
   selector.innerHTML = template;
 }
 
-function printFooter(opts, id) {
+export function printFooter(opts, id) {
   let template = "";
   for (const each of opts) {
     template =
@@ -69,7 +69,7 @@ function printFooter(opts, id) {
   selector.innerHTML = template;
 }
 
-function printIcons() {
+ export function printIcons() {
   let template = `
       <li id="facebook" class="header-li">
         <a class="header-a" href="https://facebook.com">

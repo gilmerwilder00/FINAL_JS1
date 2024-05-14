@@ -1,4 +1,4 @@
-function changeQuantityCart(event) {
+export function changeQuantityCart(event) {
   let cartproducts = JSON.parse(localStorage.getItem("cart"));
   let one = cartproducts.find((each) => each.id === event.target.id);
   one.quantity = event.target.value;

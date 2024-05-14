@@ -1,4 +1,6 @@
-function printCartCards(arrayOfProducts, id) {
+import { createCartCard } from "./createCartCard.js";
+
+export function printCartCards(arrayOfProducts, id) {
   let cartTemplates = "";
   const selector = document.getElementById(id);
   if (arrayOfProducts.length > 0) {

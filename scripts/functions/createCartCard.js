@@ -1,4 +1,4 @@
-function createCartCard(product) {
+export function createCartCard(product) {
   return `
     <article class="product-cart">
       <img class="product-img" src="${product.image}" alt="${product.title}">

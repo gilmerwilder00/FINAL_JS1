@@ -1,4 +1,9 @@
-function printDetails(id) {
+import { products } from "../products.js";
+import { changeMini } from "./changeMini.js";
+import { saveProd } from "./saveproduct.js";
+
+
+export function printDetails(id) {
   const product = products.find((each) => each.id === id);
   const detailsTemplate = `
     <section class="product-images-block">

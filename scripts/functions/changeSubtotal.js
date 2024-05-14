@@ -1,4 +1,4 @@
-function changeSubtotal(event) {
+export function changeSubtotal(event) {
   const value = event.target.value;
   const id = event.target.id.slice(9)
   const found = products.find((each) => each.id === id);

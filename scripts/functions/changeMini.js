@@ -1,5 +1,7 @@
-function changeMini(event) {
+export function changeMini(event) {
   const selectedSrc = event.target.src;
   const bigSelector = document.querySelector("#big-img");
   bigSelector.src = selectedSrc;
 }
+
+window.changeMini =  changeMini;

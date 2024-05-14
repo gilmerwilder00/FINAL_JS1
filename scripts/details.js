@@ -1,3 +1,10 @@
+import { hideSearch, printIcons, printNavBar, printFooter, options } from "./functions/printLayout.js";
+import { printDetails } from "./functions/printDetails.js";
+import { printProductCards } from "./functions/printProductCards.js";
+import { products } from "./products.js";
+
+
+
 hideSearch();
 printIcons();
 printNavBar(options, "navbar");

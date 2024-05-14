@@ -280,7 +280,7 @@ const prod20 = new Product(
   false
 );
 
-const products = [
+export const products = [
   prod1,
   prod11,
   prod14,

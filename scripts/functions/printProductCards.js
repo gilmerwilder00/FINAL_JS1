@@ -1,4 +1,6 @@
-function printProductCards(arrayOfProducts, idSelector) {
+import { createProductCard } from "./createProductCard.js";
+
+export function printProductCards(arrayOfProducts, idSelector) {
   let productsTemplate = "";
   const productsSelector = document.getElementById(idSelector);
   if (arrayOfProducts.length > 0) {
