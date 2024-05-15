@@ -2,9 +2,23 @@ import { clearCart} from "./buyProducts.js";
 
 export function printCartTotal(arrayOfProducts, id) {
   let total = 0;
-  arrayOfProducts.forEach(
-    (each) => (total = total + each.price * each.quantity)
+
+  // arrayOfProducts.forEach(
+  //   (each) => (total = total + each.price * each.quantity)
+  // );
+
+  //  Total with reduce 
+
+  total = arrayOfProducts.reduce(
+    (acc , actProduct) =>  acc + actProduct.price * actProduct.quantity ,
+    0
   );
+
+  // total = arrayOfProducts.reduce(
+  //   (acc, actProduct) =>  acc + actProduct.price * actProduct.quantity
+  // , 0 );
+
+
   const template = `
      <div class="cart-resume">
        <div class="cart-data">

@@ -7,7 +7,29 @@ printIcons();
 printNavBar(options, "navbar");
 printFooter(options, "footer");
 
-printProductCards(products, "products");
+// sort productos
+
+const sortProducts = products.sort(
+  (productA,productB) => productA.title.localeCompare(productB.title) 
+);
+
+// const sortProducts = products.sort(
+//   (productA,productB) => productB.title.localeCompare(productA.title) 
+// );
+
+
+// let str1 = "apple";
+// let str2 = "banana";
+
+// console.log(str1.localeCompare(str2)); // -1, porque "apple" viene antes que "banana"
+// console.log(str2.localeCompare(str1)); // 1, porque "banana" viene después que "apple"
+// console.log(str1.localeCompare("apple")); // 0, porque las cadenas son iguales
+
+
+
+// printProductCards(products, "products");
+printProductCards(sortProducts, "products");
+
 
 const searchSelector = document.querySelector("#search");
 searchSelector.addEventListener("keyup", printFilter);

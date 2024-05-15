@@ -1,3 +1,5 @@
+import { changeQuantityCart } from './changeQuantityCart.js'
+
 export function createCartCard(product) {
   return `
     <article class="product-cart">
