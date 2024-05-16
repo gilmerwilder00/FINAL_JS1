@@ -1,0 +1,80 @@
+
+**********************************************************************************************************************************
+ESTRUCTURA GENERAL
+
+Objeto JSON: Representado por llaves {}. Contiene pares clave-valor.
+Array JSON: Representado por corchetes []. Contiene una lista de valores.
+
+**********************************************************************************************************************************
+REGLAS PARA CLAVES Y VALORES
+
+
+1.Claves:
+
+Deben estar en comillas dobles "".
+Deben ser únicas dentro de un mismo objeto.
+
+json: { "clave": "valor" }
+
+
+2. Valores:
+
+Pueden ser de tipo string, number, object, array, true, false, o null.
+Las cadenas (string) deben estar en comillas dobles "".
+
+json : { 
+    
+        "string": "texto", 
+        "number": 123, 
+        "boolean": true, 
+        "null": null, 
+        "object": {}, 
+        "array": []
+        
+       }
+
+
+**********************************************************************************************************************************
+CONSIDERACIONES ESPECÍFICAS
+
+1. Comillas:
+
+-Las claves y las cadenas deben usar comillas dobles "". Las comillas simples no son válidas.
+
+2.Separadores:
+
+-Los pares clave-valor se separan con comas ',' . 
+-No debe haber una coma después del último par clave-valor de un objeto o el último valor de un array.
+
+3. Blancos y Saltos de Línea:
+
+-Los espacios en blanco y los saltos de línea no afectan el formato JSON y se pueden usar para mejorar la legibilidad.
+
+
+**********************************************************************************************************************************
+RESUMEN
+
+1.Sintaxis JSON:
+
+-Cada clave debe tener un valor.
+-Las comas deben separar pares clave-valor y elementos de array.
+-Las estructuras deben cerrarse correctamente ({} para objetos y [] para arrays).
+
+
+2. Ejemplo de un Error Común y su Solución
+
+Error: Coma adicional
+
+{
+  "name": "John",
+  "age": 30,
+}
+
+Solución: Eliminar la coma adicional después del último par clave-valor
+
+{
+  "name": "John",
+  "age": 30
+}
+
+3. Validacion: https://jsonlint.com/

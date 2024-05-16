@@ -65,6 +65,8 @@ export function printFooter(opts, id) {
       </ul>
     `;
   }
+
+
   const selector = document.getElementById(id);
   selector.innerHTML = template;
 }
