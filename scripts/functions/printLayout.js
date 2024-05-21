@@ -98,7 +98,7 @@ export function printFooter(opts, id) {
         </a>
       </li>
       <li id="login" class="header-li " >
-        <a class="header-a" href="#">
+        <a class="header-a" href="login.html">
           <i class="fa-solid fa-circle-user header-social-img"></i>
         </a>
       </li>

@@ -26,6 +26,7 @@ import { products } from "../products.js";
 // }
 
 export function saveProd(id) {
+
   const found = products.find((each) => each.id === id);
 
   const product = {
